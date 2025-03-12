@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Это BASE</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header class="header container">
+        <img class="header__logo" src="images/Vector.png" alt="Логотип" width="100" height="100">
+        <h1 class="header__title">Онлайн-репетитор</h1>
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li class="header__item--active">
+                    <a class="header__link" href="#">Курсы</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="#">О нас</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="#">Ещё</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="login.html">Вход</a>
+    </header>
+    <main class="container" id="main">
+        <section class="section apple" id="apple">
+            <div class="apple__content">
+                <h2 class="apple__title section__title">Учись и познавай мир</h2>
+                <p class="apple__description">Никаких ГДЗ и шпаргалок! Учи, <br>понимай и держи в голове.</p>
+                <div class="apple__buttons">
+                    <button class="apple__button-add button button--accent" type="button">Пробный урок</button>
+                    <button class="apple__button button" type="button">Войти</button>
+                </div>
+            </div>
+            <img class="apple__image" src="images/section1.png" alt="Математика и Физика" width="60" height="80">
+        </section>
+
+        <section class="section card"  id="card">
+            <h2 class="section__title">Курсы физико-математических наук для любого уровня</h2>
+            <p class="section__description">Давайте вместе погрузимся в увлекательный мир математики и физики</p>
+            <div class="card__list">
+                <a class="card__item" href="#">
+                    <span class="card__icon">
+                        <img src="images/математика_база.jpg" alt="Математика:базовый уровень" width="22"
+                             height="24">
+                    </span>
+                    <h3 class="card__title">Математика: базовый уровень</h3>
+                    <p class="card__description">Длительность 20 часов</p>
+                </a>
+                <a class="card__item" href="#">
+                    <span class="card__icon">
+                        <img src="images/Математика_профиль.jpg" alt="Математика:профильный уровень" width="24"
+                        height="24">
+                    </span>
+                    <h3 class="card__title">Математика: профильный уровень</h3>
+                    <p class="card__description">Длительность 30 часов</p>
+                </a>
+                <a class="card__item" href="#">
+                    <span class="card__icon">
+                        <img src="images/Физика7-9.jpg" alt="Физика: 7-9 класс" width="24"
+                        height="23">
+                    </span>
+                    <h3 class="card__title">Физика: 7-9 класс</h3>
+                    <p class="card__description">Длительность 15 часов</p>
+                </a>
+                <a class="card__item" href="#">
+                    <span class="card__icon">
+                        <img src="images/Физика10-11.jpeg" alt="Физика: 10-11 класс" width="24"
+                        height="23">
+                    </span>
+                    <h3 class="card__title">Физика: 10-11 класс</h3>
+                    <p class="card__description">Длительность: 20 часов</p>
+                </a>
+            </div>
+        </section>
+        <section>
+            <div class="teachers">
+                <h2 class="teachers__title">Наши преподаватели</h2>
+                <div class="teachers__card">
+                    <img src="images/gh.jpg" src="" alt="Фото преподавателя" width="350" height="350">
+                    <p class="teachers__name">Ульяна Евгеньевна</p>
+                    <p class="teachers__desc">Преподает математику</p>
+                </div>
+                <div class="teachers__card">
+                    <img src="images/fl.jpg" src="" alt="Фото преподавателя" width="350" height="350">
+                    <p class="teachers__name">Аделина Радиковна</p>
+                    <p class="teachers__desc">Преподает физику</p>
+                </div>
+                <a href="#" target="_blank">Все курсы</a>
+            </div>
+        </section>
+            <form action="/">
+                <h1>Регистариция</h1>
+                <input type="tel" name="phone" placeholder="Номер телефона" required>
+                <input type="password" name="password" placeholder="Пароль" required>
+                <input type="password" name="password" placeholder="Подтвердить пароль" required>
+                <button>Зарегистрироваться</button>
+            </form>
+    </main>
+    <footer class="footer">
+        <p>Сайт создан Казаковой Ульяной и Комышевой Аделиной группа ИП-23</p>
+        <ul>
+            <li><a href="#">Политика конфиденциальности</a></li>
+            <li><a href="#">Пользовательское соглашение</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </footer>
+</body>
+</html
