@@ -1,0 +1,75 @@
+/* Контейнер-обертка */
+.container {
+    position: relative;
+
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 120px;
+}
+
+/* Заголовки */
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    color: #fdb100;
+}
+
+/* Кнопки */
+.button {
+    min-height: 60px;
+    padding: 12px 20px;
+
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #0066ff;
+
+    border: 1px solid #008deb;
+    border-radius: 16px;
+    background-color: transparent;
+
+    cursor: pointer;
+
+    transition: background-color 0.4s ease-out, color 0.4s ease-out;
+}
+
+.button:hover,
+.button:focus {
+    color: #ffffff;
+    background-color: #00a0fd;
+}
+
+.button--accent {
+    color: #ffffff;
+
+    background-color: #006eff;
+}
+
+.button--accent:hover,
+.button--accent:focus {
+    color: #0076fd;
+    background-color: #ffffff;
+}
+
+.button--link {
+    width: fit-content;
+    margin: 0 auto;
+
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-underline-offset: 8px;
+
+    border: none;
+    background-color: transparent;
+
+    transition: text-decoration-color 0.3s;
+}
+
+.button--link:hover,
+.button--link:focus {
+    color: #0063f8;
+    background-color: #014cad;
+
+    text-decoration-color: transparent;
+}
