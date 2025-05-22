@@ -1,0 +1,124 @@
+/* =====================================
+   Stellar Glass Features Section
+===================================== */
+
+.stellar-features {
+  padding: 120px 20px;
+  background: linear-gradient(145deg, #f3f4ff 0%, #e3e7ff 100%);
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+}
+
+.stellar-features .section-title h2 {
+  font-size: 2.8rem;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.stellar-features .section-title p {
+  font-size: 1.15rem;
+  color: #444;
+  margin-bottom: 60px;
+}
+
+/* Grid Layout */
+.stellar-features-grid {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Cards */
+.stellar-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 20px;
+  padding: 60px 30px 40px;
+  flex: 1 1 300px;
+  max-width: 320px;
+  backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: var(--transition);
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(67, 97, 238, 0.1);
+  transform-style: preserve-3d;
+}
+
+.stellar-card:hover {
+  transform: translateY(-8px) rotateX(1deg) rotateY(-2deg) scale(1.03);
+  box-shadow: 0 30px 60px rgba(67, 97, 238, 0.2);
+}
+
+/* Glowing border "aura" */
+.stellar-glow {
+  position: absolute;
+  top: -80px;
+  left: -80px;
+  width: 250%;
+  height: 250%;
+  background: conic-gradient(from 180deg at 50% 50%, var(--primary-color), var(--accent-color), var(--primary-color));
+  animation: rotate 8s linear infinite;
+  filter: blur(60px);
+  opacity: 0.2;
+  z-index: 0;
+}
+
+/* Icon */
+.stellar-icon {
+  font-size: 3rem;
+  color: var(--white);
+  background: var(--gradient);
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 25px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(67, 97, 238, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+}
+
+/* Headings and paragraph */
+.stellar-card h3 {
+  font-size: 1.4rem;
+  color: var(--secondary-color);
+  margin-bottom: 14px;
+  position: relative;
+  z-index: 1;
+}
+
+.stellar-card p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
+}
+
+/* Rotate animation for glow */
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Adaptiveness */
+@media (max-width: 768px) {
+  .stellar-features-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stellar-card {
+    max-width: 100%;
+  }
+}

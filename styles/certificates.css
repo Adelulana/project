@@ -1,0 +1,93 @@
+/* =============================================
+   Уникальная секция "Сертификаты и лицензии"
+============================================= */
+.certificates-hex {
+  padding: 100px 20px;
+  background: var(--light-bg);
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.certificates-hex .section-title h2 {
+  font-size: 2.6rem;
+  margin-bottom: 10px;
+}
+
+.certificates-hex .section-title p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 60px;
+}
+
+.certificates-hex-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hex-card {
+  background: var(--white);
+  padding: 40px 30px;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  box-shadow: var(--card-shadow);
+  max-width: 300px;
+  flex: 1 1 280px;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--primary-color);
+}
+
+.hex-card:hover {
+  transform: translateY(-10px) rotateZ(1deg);
+  box-shadow: var(--hover-shadow);
+}
+
+.hex-card .icon-glow {
+  width: 80px;
+  height: 80px;
+  background: var(--gradient);
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-size: 2rem;
+  box-shadow: 0 0 15px rgba(67, 97, 238, 0.5);
+  animation: pulseGlow 3s infinite;
+}
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(67, 97, 238, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 20px rgba(67, 97, 238, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(67, 97, 238, 0);
+  }
+}
+
+.hex-card h4 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: var(--secondary-color);
+}
+
+.hex-card p {
+  font-size: 0.96rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .certificates-hex-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+}

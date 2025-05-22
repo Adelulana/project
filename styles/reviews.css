@@ -1,0 +1,209 @@
+/* Стили для карусели отзывов */
+.reviews-slider {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  position: relative;
+}
+
+.review-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  margin: 10px auto;
+  max-width: 600px;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+}
+
+.review-content {
+  margin-bottom: 20px;
+}
+
+.review-rating {
+  color: #ffd700;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.review-text {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.reviewer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+.reviewer i {
+  font-size: 45px;
+  color: #666;
+}
+
+.reviewer-info h4 {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+  font-weight: 600;
+}
+
+.reviewer-info p {
+  margin: 5px 0 0;
+  font-size: 16px;
+  color: #666;
+}
+
+/* Стили для навигационных кнопок */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #007bff;
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 20px;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: #007bff;
+  color: white;
+}
+
+/* Стили для пагинации */
+.swiper-pagination {
+  position: relative;
+  margin-top: 20px;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #666;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+  margin: 0 5px !important; /* Увеличиваем расстояние между точками */
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #007bff;
+  transform: scale(1.2);
+}
+
+/* Контейнер пагинации */
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: -30px;
+  left: 0;
+  width: 100%;
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+  .reviews-slider {
+    padding: 20px 10px;
+  }
+
+  .review-card {
+    padding: 20px;
+  }
+
+  .review-text {
+    font-size: 16px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+}
+
+/* Дополнительные стили для секции отзывов */
+.reviews {
+  background: #f8f9fa;
+  padding: 60px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title h2 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.section-title p {
+  font-size: 18px;
+  color: #666;
+}
+
+/* Анимация для карточек */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.review-card {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Стили для рейтинга */
+.review-rating {
+  display: flex;
+  gap: 2px;
+}
+
+.review-rating span {
+  color: #ffd700;
+}
+
+/* Улучшенные стили для hover-эффектов */
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: #007bff;
+  color: white;
+  transform: scale(1.1);
+}
+
+.swiper-pagination-bullet:hover {
+  background: #007bff;
+  opacity: 0.7;
+}
+
+/* Стили для плавных переходов */
+.review-card,
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-pagination-bullet {
+  transition: all 0.3s ease;
+}

@@ -1,113 +1,348 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Это BASE</title>
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Онлайн репетиторство - Путь к знаниям</title>
+
+  <!-- Шрифты и стили -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/lucide@latest/dist/css/lucide.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/styles.css" />
 </head>
 <body>
-    <header class="header container">
-        <img class="header__logo" src="images/Vector.png" alt="Логотип" width="100" height="100">
-        <h1 class="header__title">Онлайн-репетитор</h1>
-        <nav class="header__nav">
-            <ul class="header__list">
-                <li class="header__item--active">
-                    <a class="header__link" href="#">Курсы</a>
-                </li>
-                <li class="header__item">
-                    <a class="header__link" href="#">О нас</a>
-                </li>
-                <li class="header__item">
-                    <a class="header__link" href="#">Ещё</a>
-                </li>
-            </ul>
-        </nav>
-        <a href="login.html">Вход</a>
-    </header>
-    <main class="container" id="main">
-        <section class="section apple" id="apple">
-            <div class="apple__content">
-                <h2 class="apple__title section__title">Учись и познавай мир</h2>
-                <p class="apple__description">Никаких ГДЗ и шпаргалок! Учи, <br>понимай и держи в голове.</p>
-                <div class="apple__buttons">
-                    <button class="apple__button-add button button--accent" type="button">Пробный урок</button>
-                    <button class="apple__button button" type="button">Войти</button>
-                </div>
-            </div>
-            <img class="apple__image" src="images/section1.png" alt="Математика и Физика" width="60" height="80">
-        </section>
 
-        <section class="section card"  id="card">
-            <h2 class="section__title">Курсы физико-математических наук для любого уровня</h2>
-            <p class="section__description">Давайте вместе погрузимся в увлекательный мир математики и физики</p>
-            <div class="card__list">
-                <a class="card__item" href="#">
-                    <span class="card__icon">
-                        <img src="images/математика_база.jpg" alt="Математика:базовый уровень" width="22"
-                             height="24">
-                    </span>
-                    <h3 class="card__title">Математика: базовый уровень</h3>
-                    <p class="card__description">Длительность 20 часов</p>
-                </a>
-                <a class="card__item" href="#">
-                    <span class="card__icon">
-                        <img src="images/Математика_профиль.jpg" alt="Математика:профильный уровень" width="24"
-                        height="24">
-                    </span>
-                    <h3 class="card__title">Математика: профильный уровень</h3>
-                    <p class="card__description">Длительность 30 часов</p>
-                </a>
-                <a class="card__item" href="#">
-                    <span class="card__icon">
-                        <img src="images/Физика7-9.jpg" alt="Физика: 7-9 класс" width="24"
-                        height="23">
-                    </span>
-                    <h3 class="card__title">Физика: 7-9 класс</h3>
-                    <p class="card__description">Длительность 15 часов</p>
-                </a>
-                <a class="card__item" href="#">
-                    <span class="card__icon">
-                        <img src="images/Физика10-11.jpeg" alt="Физика: 10-11 класс" width="24"
-                        height="23">
-                    </span>
-                    <h3 class="card__title">Физика: 10-11 класс</h3>
-                    <p class="card__description">Длительность: 20 часов</p>
-                </a>
-            </div>
-        </section>
-        <section>
-            <div class="teachers">
-                <h2 class="teachers__title">Наши преподаватели</h2>
-                <div class="teachers__card">
-                    <img src="images/f907e18e-bac0-4a30-80d2-2ccd3dc8283f.png" src="" alt="Фото преподавателя" width="350" height="350">
-                    <p class="teachers__name">Ульяна Евгеньевна</p>
-                    <p class="teachers__desc">Преподает математику</p>
-                </div>
-                <div class="teachers__card">
-                    <img src="images/fl.jpg" src="" alt="Фото преподавателя" width="350" height="350">
-                    <p class="teachers__name">Аделина Радиковна</p>
-                    <p class="teachers__desc">Преподает физику</p>
-                </div>
-                <a href="#" target="_blank">Все курсы</a>
-            </div>
-        </section>
-            <form action="/">
-                <h1>Регистариция</h1>
-                <input type="tel" name="phone" placeholder="Номер телефона" required>
-                <input type="password" name="password" placeholder="Пароль" required>
-                <input type="password" name="password" placeholder="Подтвердить пароль" required>
-                <button>Зарегистрироваться</button>
-            </form>
-    </main>
-    <footer class="footer">
-        <p>Сайт создан Казаковой Ульяной и Комышевой Аделиной группа ИП-23</p>
-        <ul>
-            <li><a href="#">Политика конфиденциальности</a></li>
-            <li><a href="#">Пользовательское соглашение</a></li>
-            <li><a href="#">Контакты</a></li>
-        </ul>
-    </footer>
+<!-- Прелоадер -->
+<div id="preloader" class="preloader">
+  <div class="sk-circle">
+    <div class="sk-circle1 sk-child"></div>
+    <div class="sk-circle2 sk-child"></div>
+    <div class="sk-circle3 sk-child"></div>
+    <div class="sk-circle4 sk-child"></div>
+    <div class="sk-circle5 sk-child"></div>
+    <div class="sk-circle6 sk-child"></div>
+    <div class="sk-circle7 sk-child"></div>
+    <div class="sk-circle8 sk-child"></div>
+    <div class="sk-circle9 sk-child"></div>
+    <div class="sk-circle10 sk-child"></div>
+    <div class="sk-circle11 sk-child"></div>
+    <div class="sk-circle12 sk-child"></div>
+  </div>
+</div>
+
+  <header class="header">
+    <nav class="nav">
+      <div class="logo"><h1>EduMentor</h1></div>
+      <ul class="nav-links">
+        <li><a href="#hero">Главная</a></li>
+        <li><a href="#subjects">Предметы</a></li>
+        <li><a href="#reviews">Отзывы</a></li>
+        <li><a href="#certificates">Сертификаты</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
+      <button class="login-btn">Войти</button>
+    </nav>
+  </header>
+
+
+  <main>
+    <!-- Hero -->
+    <section id="hero" class="hero">
+      <div class="hero-background">
+        <div class="animated-shape shape1"></div>
+        <div class="animated-shape shape2"></div>
+        <div class="animated-shape shape3"></div>
+      </div>
+      <div class="hero-content" data-aos="fade-up">
+        <h2>Открой новые горизонты знаний</h2>
+        <p class="hero-subtitle">Персональные онлайн-занятия с лучшими преподавателями</p>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <i class="fas fa-user-graduate"></i>
+            <span class="stat-number">5000</span>
+            <span class="stat-text">Учеников</span>
+          </div>
+          <div class="stat-item">
+            <i class="fas fa-chalkboard-teacher"></i>
+            <span class="stat-number">200</span>
+            <span class="stat-text">Преподавателей</span>
+          </div>
+          <div class="stat-item">
+            <i class="fas fa-book-open"></i>
+            <span class="stat-number">25</span>
+            <span class="stat-text">Предметов</span>
+          </div>
+        </div>
+        <div class="hero-buttons">
+          <a href="#contacts" class="cta-button primary">Начать обучение</a>
+          <a href="#features" class="cta-button secondary">Узнать больше</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- О нас -->
+    <section id="about" class="about">
+  <div class="about-container">
+    <div class="about-text" data-aos="fade-right">
+      <h2>О нас</h2>
+      <p>
+        EduMentor — это цифровая платформа нового поколения, где каждый ученик получает индивидуальный подход и доступ к лучшим преподавателям по всему миру.
+        Мы создаем не просто уроки, а уникальные образовательные маршруты, которые ведут вас к успеху.
+      </p>
+      <p>
+        Мы верим, что обучение должно быть вдохновляющим, доступным и гибким. Присоединяйтесь к тысячам учеников, которые уже изменили свою жизнь с EduMentor.
+      </p>
+    </div>
+    <div class="about-image" data-aos="fade-left">
+      <img src="images/about.jpg" alt="О нас (анимация)" />
+    </div>
+  </div>
+</section>
+
+    <!-- Предметы -->
+    <section id="subjects" class="subjects">
+      <div class="section-title">
+        <h2>Популярные предметы</h2>
+        <p>Выберите курс и начните обучение</p>
+      </div>
+      <div class="subjects-grid">
+        <div class="subject-card" data-aos="fade-up">
+          <i class="fas fa-square-root-alt"></i>
+          <h3>Математика</h3>
+          <p>Алгебра, геометрия, подготовка к ЕГЭ</p>
+          <button class="course-button" data-course="Математика">Купить курс</button>
+        </div>
+        <div class="subject-card" data-aos="fade-up" data-aos-delay="100">
+          <i class="fas fa-atom"></i>
+          <h3>Физика</h3>
+          <p>Оптика, механика, электричество</p>
+          <button class="course-button" data-course="Физика">Купить курс</button>
+        </div>
+        <div class="subject-card" data-aos="fade-up" data-aos-delay="200">
+          <i class="fas fa-language"></i>
+          <h3>Языки</h3>
+          <p>Английский, Немецкий, Французский</p>
+          <button class="course-button" data-course="Иностранные языки">Купить курс</button>
+        </div>
+      </div>
+    </section>
+
+<!-- Уникальные Преимущества -->
+<section class="stellar-features" id="features">
+  <div class="section-title">
+    <h2>Преимущества платформы</h2>
+    <p>Когда важно качество, будущее и индивидуальность</p>
+  </div>
+
+  <div class="stellar-features-grid">
+    <div class="stellar-card" data-aos="zoom-in">
+      <div class="stellar-glow"></div>
+      <div class="stellar-icon"><i class="fas fa-user-astronaut"></i></div>
+      <h3>Top-преподаватели</h3>
+      <p>Только практики с опытом 8+ лет и сияющими результатами учеников</p>
+    </div>
+
+    <div class="stellar-card" data-aos="zoom-in" data-aos-delay="100">
+      <div class="stellar-glow"></div>
+      <div class="stellar-icon"><i class="fas fa-infinity"></i></div>
+      <h3>Гибкость обучения</h3>
+      <p>Онлайн-график под тебя: по будням или в 3 утра — без ограничений</p>
+    </div>
+
+    <div class="stellar-card" data-aos="zoom-in" data-aos-delay="200">
+      <div class="stellar-glow"></div>
+      <div class="stellar-icon"><i class="fas fa-brain"></i></div>
+      <h3>Уникальные методики</h3>
+      <p>Мы не повторяем — мы создаём авторские подходы под твою цель</p>
+    </div>
+  </div>
+</section>
+
+
+   <!-- Отзывы -->
+<section id="reviews" class="reviews">
+  <div class="section-title">
+    <h2>Отзывы наших учеников</h2>
+    <p>Что говорят о нас</p>
+  </div>
+  <div class="swiper reviews-slider">
+    <div class="swiper-wrapper">
+      <!-- Отзывы будут загружены динамически -->
+    </div>
+    <!-- Навигация -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <!-- Пагинация -->
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+    <!-- Призыв -->
+    <section id="cta" class="cta">
+      <div class="cta-content">
+        <h2>Готовы начать обучение?</h2>
+        <p>Первое пробное занятие бесплатно!</p>
+        <button class="cta-button primary">Записаться на урок</button>
+      </div>
+    </section>
+
+
+
+
+<!-- Сертификаты и лицензии -->
+<section id="certificates" class="certificates-hex">
+  <div class="section-title">
+    <h2>Сертификаты и лицензии</h2>
+    <p>Формальное подтверждение нашего качества</p>
+  </div>
+
+  <div class="certificates-hex-container">
+    <div class="hex-card" data-aos="zoom-in">
+      <div class="icon-glow"><i class="fas fa-certificate"></i></div>
+      <h4>Гос. лицензия</h4>
+      <p>Подтверждена РосОбрНадзором №12345</p>
+    </div>
+    <div class="hex-card" data-aos="zoom-in" data-aos-delay="100">
+      <div class="icon-glow"><i class="fas fa-file-alt"></i></div>
+      <h4>Международные стандарты</h4>
+      <p>Наши курсы соответствуют ФГОС и CEFR</p>
+    </div>
+    <div class="hex-card" data-aos="zoom-in" data-aos-delay="200">
+      <div class="icon-glow"><i class="fas fa-user-check"></i></div>
+      <h4>Аттестованные преподаватели</h4>
+      <p>Все педагоги прошли сертификацию</p>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Контакты -->
+    <section id="contacts" class="contacts">
+      <div class="section-title">
+        <h2>Связаться с нами</h2>
+        <p>Остались вопросы? Напишите нам!</p>
+      </div>
+      <div class="contacts-container">
+        <div class="contact-form" data-aos="fade-up">
+          <form>
+            <input type="text" name="name" placeholder="Ваше имя" required />
+            <input type="email" name="email" placeholder="Ваш email" required />
+            <textarea name="message" placeholder="Ваше сообщение" required></textarea>
+            <button type="submit" class="cta-button primary">Отправить</button>
+          </form>
+        </div>
+        <div class="contact-info" data-aos="fade-up" data-aos-delay="100">
+          <p><i class="fas fa-envelope"></i> edumentor@mail.ru</p>
+          <p><i class="fas fa-phone"></i> +7 (999) 123-45-67</p>
+          <p><i class="fas fa-map-marker-alt"></i> Москва, Россия</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>EduMentor</h3>
+        <p>Онлайн-образование для всех</p>
+      </div>
+      <div class="footer-section">
+        <h3>Контакты</h3>
+        <p><i class="fas fa-envelope"></i> edumentor@mail.ru</p>
+        <p><i class="fas fa-phone"></i> +7 (999) 123-45-67</p>
+      </div>
+      <div class="footer-section">
+        <h3>Социальные сети</h3>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-vk"></i></a>
+          <a href="#"><i class="fab fa-telegram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 EduMentor. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <!-- Модальные окна -->
+  <div class="modal-overlay" id="purchaseModal">
+    <div class="modal">
+      <h3>Спасибо за покупку!</h3>
+      <p>Наш менеджер свяжется с вами в ближайшее время.</p>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="contactModal">
+    <div class="modal">
+      <h3>Спасибо!</h3>
+      <p>Ваше сообщение успешно отправлено.</p>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="courseBuyModal">
+    <div class="modal course-modal">
+      <h3 class="course-title">Покупка курса</h3>
+      <form class="course-form" onsubmit="submitCourseForm(event)">
+        <input type="text" name="userName" placeholder="Ваше имя" required />
+        <input type="email" name="userEmail" placeholder="Ваш email" required />
+        <label for="courseSelect">Курс:</label>
+        <select name="course" id="courseSelect" required>
+          <option disabled selected value="">Выберите курс</option>
+          <option>Математика</option>
+          <option>Физика</option>
+          <option>Иностранные языки</option>
+        </select>
+        <textarea name="message" placeholder="Комментарий (необязательно)"></textarea>
+        <button type="submit" class="cta-button primary">Отправить заявку</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="loginModal">
+  <div class="modal login-modal">
+    <h3>Войти в аккаунт</h3>
+    <form class="login-form" id="loginForm">
+      <label>Email или логин</label>
+      <input type="email" name="login" placeholder="example@mail.com" required />
+      <label>Пароль</label>
+      <input type="password" name="password" placeholder="Введите пароль" required />
+      <div class="remember-me">
+        <input type="checkbox" id="remember" />
+        <label for="remember">Запомнить меня</label>
+      </div>
+      <button type="submit" class="cta-button primary">Войти</button>
+      <div class="modal-links">
+        <a href="#">Забыли пароль?</a><span>|</span><a href="#">Регистрация</a>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+<button id="scrollTopBtn" class="scroll-to-top" data-aos="fade-left" aria-label="Наверх">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+       stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+       class="feather feather-arrow-up">
+    <line x1="12" y1="19" x2="12" y2="5" />
+    <polyline points="5 12 12 5 19 12" />
+  </svg>
+</button>
+
+
+
+  <!-- Скрипты -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="scripts/script.js"></script>
 </body>
-</html
+</html>

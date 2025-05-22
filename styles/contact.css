@@ -1,0 +1,103 @@
+/* Контакты */
+.contacts {
+    padding: 8rem 2rem;
+    background: var(--light-bg);
+    position: relative;
+}
+
+.contacts-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.contact-form,
+.contact-info {
+    flex: 1 1 400px;
+    background: var(--white);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: var(--card-shadow);
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.15);
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.contact-form button {
+    padding: 1rem 2rem;
+    background: var(--gradient);
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: var(--transition);
+    width: fit-content;
+}
+
+.contact-form button:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--hover-shadow);
+}
+
+/* Блок информации */
+.contact-info p {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.contact-info i {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+/* Адаптив контактов */
+@media (max-width: 768px) {
+    .contacts-container {
+        flex-direction: column;
+    }
+
+    .contact-form,
+    .contact-info {
+        flex: 1 1 100%;
+    }
+
+    .contact-form button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
